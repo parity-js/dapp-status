@@ -39,9 +39,11 @@ PACKAGE_VERSION=$(cat package.json \
 VERSION="${PACKAGE_VERSION} (${UTCDATE})"
 
 echo "Cloning dist repo"
-git clone https://github.com/js-dist-${TRAVIS_REPO_SLUG}.git dist
+TRAVIS_REPO_SLUG_L=${TRAVIS_REPO_SLUG,,}
+DIST_REPO_SLUG=${TRAVIS_REPO_SLUG_L/parity-js/js-dist-paritytech}
+git clone https://github.com/${DIST_REPO_SLUG}.git dist
 cd dist
-git remote set-url origin https://${GH_TOKEN}@github.com/js-dist-${TRAVIS_REPO_SLUG}.git > /dev/null 2>&1
+git remote set-url origin https://${GH_TOKEN}@github.com/${DIST_REPO_SLUG}.git > /dev/null 2>&1
 git checkout $TRAVIS_BRANCH
 
 echo "Copying build output"
