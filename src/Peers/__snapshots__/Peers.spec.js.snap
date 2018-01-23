@@ -1,0 +1,298 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly when showing settings 1`] = `
+<Section
+  title={
+    <div>
+      <FormattedMessage
+        defaultMessage="Network Peers"
+        id="dapp.status.peers.title"
+        values={Object {}}
+      />
+      <Button
+        as="button"
+        basic={true}
+        circular={true}
+        className={undefined}
+        compact={true}
+        icon="setting"
+        onClick={[Function]}
+        size="large"
+      />
+    </div>
+  }
+>
+  <inject-ReservedPeersForm-with-netPeersStore />
+  <Table
+    as="table"
+    celled={true}
+    selectable={true}
+    striped={true}
+  >
+    <TableHeader
+      as="thead"
+    >
+      <TableRow
+        as="tr"
+        cellAs="td"
+      >
+        <TableHeaderCell
+          as="th"
+        />
+        <TableHeaderCell
+          as="th"
+          singleLine={true}
+        >
+          <FormattedMessage
+            defaultMessage="ID"
+            id="dapp.status.peers.idLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Remote Address"
+            id="dapp.status.peers.remoteAddressLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Name"
+            id="dapp.status.peers.nameLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Header (ETH)"
+            id="dapp.status.peers.ethHeaderLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Difficulty (ETH)"
+            id="dapp.status.peers.ethDiffLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Capabilities"
+            id="dapp.status.peers.capsLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+      </TableRow>
+    </TableHeader>
+    <TableBody
+      as="tbody"
+    >
+      <TableRow
+        as="tr"
+        cellAs="td"
+        key="Bar"
+      >
+        <TableCell
+          as="td"
+        >
+          1
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          <ScrollableText
+            text="Bar"
+          />
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          Qux
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          Baz
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          <ShortenedHash
+            data="0x123"
+          />
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          2.0000000000000000e+1
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          Foo
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</Section>
+`;
+
+exports[`should render correctly without settings 1`] = `
+<Section
+  title={
+    <div>
+      <FormattedMessage
+        defaultMessage="Network Peers"
+        id="dapp.status.peers.title"
+        values={Object {}}
+      />
+      <Button
+        as="button"
+        basic={true}
+        circular={true}
+        className={undefined}
+        compact={true}
+        icon="setting"
+        onClick={[Function]}
+        size="large"
+      />
+    </div>
+  }
+>
+  <Table
+    as="table"
+    celled={true}
+    selectable={true}
+    striped={true}
+  >
+    <TableHeader
+      as="thead"
+    >
+      <TableRow
+        as="tr"
+        cellAs="td"
+      >
+        <TableHeaderCell
+          as="th"
+        />
+        <TableHeaderCell
+          as="th"
+          singleLine={true}
+        >
+          <FormattedMessage
+            defaultMessage="ID"
+            id="dapp.status.peers.idLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Remote Address"
+            id="dapp.status.peers.remoteAddressLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Name"
+            id="dapp.status.peers.nameLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Header (ETH)"
+            id="dapp.status.peers.ethHeaderLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Difficulty (ETH)"
+            id="dapp.status.peers.ethDiffLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+        <TableHeaderCell
+          as="th"
+        >
+          <FormattedMessage
+            defaultMessage="Capabilities"
+            id="dapp.status.peers.capsLabel"
+            values={Object {}}
+          />
+        </TableHeaderCell>
+      </TableRow>
+    </TableHeader>
+    <TableBody
+      as="tbody"
+    >
+      <TableRow
+        as="tr"
+        cellAs="td"
+        key="Bar"
+      >
+        <TableCell
+          as="td"
+        >
+          1
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          <ScrollableText
+            text="Bar"
+          />
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          Qux
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          Baz
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          <ShortenedHash
+            data="0x123"
+          />
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          2.0000000000000000e+1
+        </TableCell>
+        <TableCell
+          as="td"
+        >
+          Foo
+        </TableCell>
+      </TableRow>
+    </TableBody>
+  </Table>
+</Section>
+`;

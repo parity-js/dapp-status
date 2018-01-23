@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<FormSelect
+  as={[Function]}
+  control={[Function]}
+  icon={
+    <IdentityIcon
+      address="0x1f73b8e1942165739516a93b25eac7ff1920dc1b"
+      alt="0x1f73b8e1942165739516a93b25eac7ff1920dc1b"
+      className={undefined}
+    />
+  }
+  label="Mining Author"
+  onChange={[Function]}
+  options={
+    Array [
+      Object {
+        "image": <IdentityIcon
+          address="0xC257274276a4E539741Ca11b590B9447B26A8051"
+          alt="0xC257274276a4E539741Ca11b590B9447B26A8051"
+    />,
+        "key": "0xC257274276a4E539741Ca11b590B9447B26A8051",
+        "text": "0xC257274276a4E539741Ca11b590B9447B26A8051",
+        "value": "0xC257274276a4E539741Ca11b590B9447B26A8051",
+      },
+      Object {
+        "image": <IdentityIcon
+          address="0x1f73b8e1942165739516a93b25eac7ff1920dc1b"
+          alt="0x1f73b8e1942165739516a93b25eac7ff1920dc1b"
+    />,
+        "key": "0x1f73b8e1942165739516a93b25eac7ff1920dc1b",
+        "text": "0x1f73b8e1942165739516a93b25eac7ff1920dc1b",
+        "value": "0x1f73b8e1942165739516a93b25eac7ff1920dc1b",
+      },
+    ]
+  }
+  value="0x1f73b8e1942165739516a93b25eac7ff1920dc1b"
+/>
+`;

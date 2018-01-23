@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<Section
+  title={
+    <FormattedMessage
+      defaultMessage="Network Settings"
+      id="dapp.status.network.title"
+      values={Object {}}
+    />
+  }
+>
+  <Form
+    as="form"
+  >
+    <InjectIntl(Field)
+      label={
+        <FormattedMessage
+          defaultMessage="Chain"
+          id="dapp.status.network.chainLabel"
+          values={Object {}}
+        />
+      }
+      readOnly={true}
+      value="Foo"
+    />
+    <FormGroup
+      widths={2}
+    >
+      <InjectIntl(Field)
+        label={
+          <FormattedMessage
+            defaultMessage="RPC Enabled"
+            id="dapp.status.network.rpcEnabled"
+            values={Object {}}
+          />
+        }
+        readOnly={true}
+        value="Yes"
+      />
+      <InjectIntl(Field)
+        label={
+          <FormattedMessage
+            defaultMessage="Network Port"
+            id="dapp.status.network.netPort"
+            values={Object {}}
+          />
+        }
+        readOnly={true}
+        value={4}
+      />
+    </FormGroup>
+    <FormGroup
+      widths={2}
+    >
+      <InjectIntl(Field)
+        label={
+          <FormattedMessage
+            defaultMessage="RPC Interface"
+            id="dapp.status.network.rpcInterface"
+            values={Object {}}
+          />
+        }
+        readOnly={true}
+        value="Baz"
+      />
+      <InjectIntl(Field)
+        label={
+          <FormattedMessage
+            defaultMessage="RPC Port"
+            id="dapp.status.network.rpcPort"
+            values={Object {}}
+          />
+        }
+        readOnly={true}
+        value="Qux"
+      />
+    </FormGroup>
+    <InjectIntl(Field)
+      label={
+        <FormattedMessage
+          defaultMessage="Enode"
+          id="dapp.status.network.enode"
+          values={Object {}}
+        />
+      }
+      readOnly={true}
+      showCopyButton={true}
+      value="Bar"
+    />
+  </Form>
+  <LowerCaseStatistic
+    size="tiny"
+    widths={1}
+  >
+    <Statistic>
+      <StatisticValue>
+        1/2/3
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Active/Connected/Max Peers"
+          id="dapp.status.mining.netPeersLabel"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+  </LowerCaseStatistic>
+</Section>
+`;
+
+exports[`should render correctly when not fully loaded 1`] = `
+<Section
+  title={
+    <FormattedMessage
+      defaultMessage="Network Settings"
+      id="dapp.status.network.title"
+      values={Object {}}
+    />
+  }
+>
+  <Form
+    as="form"
+  >
+    <InjectIntl(Field)
+      label={
+        <FormattedMessage
+          defaultMessage="Chain"
+          id="dapp.status.network.chainLabel"
+          values={Object {}}
+        />
+      }
+      readOnly={true}
+      value="Foo"
+    />
+    <FormGroup
+      widths={2}
+    >
+      <InjectIntl(Field)
+        label={
+          <FormattedMessage
+            defaultMessage="RPC Enabled"
+            id="dapp.status.network.rpcEnabled"
+            values={Object {}}
+          />
+        }
+        readOnly={true}
+        value="No"
+      />
+      <InjectIntl(Field)
+        label={
+          <FormattedMessage
+            defaultMessage="Network Port"
+            id="dapp.status.network.netPort"
+            values={Object {}}
+          />
+        }
+        readOnly={true}
+        value={4}
+      />
+    </FormGroup>
+    <FormGroup
+      widths={2}
+    >
+      <InjectIntl(Field)
+        label={
+          <FormattedMessage
+            defaultMessage="RPC Interface"
+            id="dapp.status.network.rpcInterface"
+            values={Object {}}
+          />
+        }
+        readOnly={true}
+      />
+      <InjectIntl(Field)
+        label={
+          <FormattedMessage
+            defaultMessage="RPC Port"
+            id="dapp.status.network.rpcPort"
+            values={Object {}}
+          />
+        }
+        readOnly={true}
+      />
+    </FormGroup>
+    <InjectIntl(Field)
+      label={
+        <FormattedMessage
+          defaultMessage="Enode"
+          id="dapp.status.network.enode"
+          values={Object {}}
+        />
+      }
+      readOnly={true}
+      showCopyButton={true}
+      value="Bar"
+    />
+  </Form>
+  <LowerCaseStatistic
+    size="tiny"
+    widths={1}
+  >
+    <Statistic>
+      <StatisticValue>
+        0/0/0
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Active/Connected/Max Peers"
+          id="dapp.status.mining.netPeersLabel"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+  </LowerCaseStatistic>
+</Section>
+`;

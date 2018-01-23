@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<Form
+  as="form"
+>
+  <FormGroup>
+    <FormField
+      width={3}
+    >
+      <Header
+        as="h4"
+      >
+        <FormattedMessage
+          defaultMessage="Network Peers Settings"
+          id="dapp.status.peers.reservedPeersForm.title"
+          values={Object {}}
+        />
+        :
+      </Header>
+    </FormField>
+    <FormCheckbox
+      as={[Function]}
+      checked={true}
+      control={[Function]}
+      label={
+        <label>
+          <FormattedMessage
+            defaultMessage="Accept non-reserved peers"
+            id="dapp.status.peers.reservedPeersForm.acceptNonReservedPeers"
+            values={Object {}}
+          />
+        </label>
+      }
+      onChange={[Function]}
+      slider={true}
+      width={3}
+    />
+    <InjectIntl(inject-EnodeField-with-netPeersStore)
+      addRemove="ADD"
+    />
+    <InjectIntl(inject-EnodeField-with-netPeersStore)
+      addRemove="REMOVE"
+    />
+  </FormGroup>
+</Form>
+`;

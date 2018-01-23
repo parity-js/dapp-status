@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div>
+  <inject-NodeHealth-with-nodeHealthStore />
+  <SegmentGroup
+    horizontal={true}
+  >
+    <inject-Mining-with-extraDataStore-gasFloorTargetStore-hashrateStore-latestBlockStore-minGasPriceStore />
+    <InjectIntl(inject-Network-with-chainStore-enodeStore-netPeersStore-netPortStore-rpcSettingsStore) />
+  </SegmentGroup>
+  <inject-Peers-with-netPeersStore />
+  <inject-Logs-with-devLogsLevelsStore-devLogsStore />
+</div>
+`;

@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`when we have a normal input should render correctly 1`] = `
+<FormField>
+  <label />
+  <Input
+    icon={true}
+    intl={
+      Object {
+        "defaultFormats": Object {},
+        "defaultLocale": "en",
+        "formatDate": [Function],
+        "formatHTMLMessage": [Function],
+        "formatMessage": [Function],
+        "formatNumber": [Function],
+        "formatPlural": [Function],
+        "formatRelative": [Function],
+        "formatTime": [Function],
+        "formats": Object {},
+        "formatters": Object {
+          "getDateTimeFormat": [Function],
+          "getMessageFormat": [Function],
+          "getNumberFormat": [Function],
+          "getPluralFormat": [Function],
+          "getRelativeFormat": [Function],
+        },
+        "locale": "en",
+        "messages": Object {},
+        "now": [Function],
+        "textComponent": "span",
+      }
+    }
+    loading={false}
+    onBlur={[Function]}
+    onChange={[Function]}
+    onKeyPress={[Function]}
+    readOnly={false}
+    type="text"
+    value={null}
+  />
+</FormField>
+`;
+
+exports[`when we have a normal input should render correctly with copy button 1`] = `
+<FormField>
+  <label />
+  <Popup
+    content={
+      <FormattedMessage
+        defaultMessage="Copied"
+        id="dapp.status.field.copied"
+        values={Object {}}
+      />
+    }
+    inverted={true}
+    on="hover"
+    open={false}
+    position="top center"
+    size="mini"
+    trigger={
+      <Input
+        action={
+          Object {
+            "icon": "copy",
+            "onClick": [Function],
+          }
+        }
+        icon={true}
+        intl={
+          Object {
+            "defaultFormats": Object {},
+            "defaultLocale": "en",
+            "formatDate": [Function],
+            "formatHTMLMessage": [Function],
+            "formatMessage": [Function],
+            "formatNumber": [Function],
+            "formatPlural": [Function],
+            "formatRelative": [Function],
+            "formatTime": [Function],
+            "formats": Object {},
+            "formatters": Object {
+              "getDateTimeFormat": [Function],
+              "getMessageFormat": [Function],
+              "getNumberFormat": [Function],
+              "getPluralFormat": [Function],
+              "getRelativeFormat": [Function],
+            },
+            "locale": "en",
+            "messages": Object {},
+            "now": [Function],
+            "textComponent": "span",
+          }
+        }
+        loading={false}
+        onBlur={[Function]}
+        onChange={[Function]}
+        onKeyPress={[Function]}
+        onSubmit={[Function]}
+        readOnly={false}
+        type="text"
+        value={null}
+      />
+    }
+  />
+</FormField>
+`;
+
+exports[`when we have an action input should render correctly 1`] = `
+<FormField>
+  <label />
+  <Input
+    action={
+      Object {
+        "content": "Foo",
+        "disabled": true,
+        "loading": false,
+        "onClick": [Function],
+        "primary": true,
+        "size": "tiny",
+      }
+    }
+    onChange={[Function]}
+    onSubmit={[Function]}
+    readOnly={false}
+    type="text"
+    value={null}
+  />
+</FormField>
+`;

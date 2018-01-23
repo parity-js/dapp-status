@@ -1,0 +1,150 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<Section
+  title={
+    <FormattedMessage
+      defaultMessage="Node Health"
+      id="dapp.status.nodeHealthTitle"
+      values={Object {}}
+    />
+  }
+>
+  <StatisticGroup
+    widths={4}
+  >
+    <Statistic>
+      <StatisticValue>
+        <FormattedMessage
+          defaultMessage="sync"
+          id="dapp.status.sync"
+          values={Object {}}
+        />
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Chain Synchronized"
+          id="dapp.status.chainSynchronized"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+    <Statistic>
+      <StatisticValue>
+        2/3
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Connected Peers"
+          id="dapp.status.connectedPeers"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+    <Statistic>
+      <StatisticValue>
+        <span>
+          Foo
+           
+          <span>
+            ms
+          </span>
+        </span>
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Time Synchronized"
+          id="dapp.status.timeSynchronized"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+    <Statistic>
+      <StatisticValue>
+        <StatusIndicator
+          id="overall"
+        />
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Overall"
+          id="dapp.status.overallHealth"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+  </StatisticGroup>
+</Section>
+`;
+
+exports[`should render correctly not fully loaded 1`] = `
+<Section
+  title={
+    <FormattedMessage
+      defaultMessage="Node Health"
+      id="dapp.status.nodeHealthTitle"
+      values={Object {}}
+    />
+  }
+>
+  <StatisticGroup
+    widths={4}
+  >
+    <Statistic>
+      <StatisticValue>
+        <FormattedMessage
+          defaultMessage="not sync"
+          id="dapp.status.notSync"
+          values={Object {}}
+        />
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Chain Not Synchronized"
+          id="dapp.status.chainNotSynchronized"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+    <Statistic>
+      <StatisticValue>
+        0/25
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Connected Peers"
+          id="dapp.status.connectedPeers"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+    <Statistic>
+      <StatisticValue>
+        -
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Time Not Synchronized"
+          id="dapp.status.timeNotSynchronized"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+    <Statistic>
+      <StatisticValue>
+        <StatusIndicator
+          id="overall"
+          status="bad"
+        />
+      </StatisticValue>
+      <StatisticLabel>
+        <FormattedMessage
+          defaultMessage="Overall"
+          id="dapp.status.overallHealth"
+          values={Object {}}
+        />
+      </StatisticLabel>
+    </Statistic>
+  </StatisticGroup>
+</Section>
+`;

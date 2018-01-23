@@ -1,0 +1,198 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly when logging 1`] = `
+<Section
+  title={
+    <div>
+      <FormattedMessage
+        as={[Function]}
+        defaultMessage="Node Logs"
+        id="dapp.status.logs.title"
+        values={Object {}}
+      />
+      <HeaderSubheader>
+        <FormattedMessage
+          as={[Function]}
+          defaultMessage="Debug Level: {level}"
+          id="dapp.status.logs.subtitle"
+          values={
+            Object {
+              "level": "Default",
+            }
+          }
+        />
+        <Button
+          as="button"
+          basic={true}
+          circular={true}
+          className={undefined}
+          compact={true}
+          icon="pause"
+          onClick={[Function]}
+          size="large"
+        />
+        <Button
+          as="button"
+          basic={true}
+          circular={true}
+          className={undefined}
+          compact={true}
+          icon="sort numeric descending"
+          onClick={[Function]}
+          size="large"
+        />
+      </HeaderSubheader>
+    </div>
+  }
+>
+  <p
+    key="0"
+  >
+    <span>
+      [
+      2-2-2
+      ]
+    </span>
+    <span>
+      BarLog
+    </span>
+  </p>
+  <p
+    key="1"
+  >
+    <span>
+      [
+      1-1-1
+      ]
+    </span>
+    <span>
+      FooLog
+    </span>
+  </p>
+</Section>
+`;
+
+exports[`should render correctly when not logging 1`] = `
+<Section
+  title={
+    <div>
+      <FormattedMessage
+        as={[Function]}
+        defaultMessage="Node Logs"
+        id="dapp.status.logs.title"
+        values={Object {}}
+      />
+      <HeaderSubheader>
+        <FormattedMessage
+          as={[Function]}
+          defaultMessage="Debug Level: {level}"
+          id="dapp.status.logs.subtitle"
+          values={
+            Object {
+              "level": "Default",
+            }
+          }
+        />
+        <Button
+          as="button"
+          basic={true}
+          circular={true}
+          className={undefined}
+          compact={true}
+          icon="play"
+          onClick={[Function]}
+          size="large"
+        />
+        <Button
+          as="button"
+          basic={true}
+          circular={true}
+          className={undefined}
+          compact={true}
+          icon="sort numeric descending"
+          onClick={[Function]}
+          size="large"
+        />
+      </HeaderSubheader>
+    </div>
+  }
+>
+  <FormattedMessage
+    defaultMessage="Refresh and display of logs from Parity is currently stopped via the UI, start it to see the latest updates."
+    id="dapp.status.logs.isLogging"
+    values={Object {}}
+  />
+</Section>
+`;
+
+exports[`should render correctly when sort ascending 1`] = `
+<Section
+  title={
+    <div>
+      <FormattedMessage
+        as={[Function]}
+        defaultMessage="Node Logs"
+        id="dapp.status.logs.title"
+        values={Object {}}
+      />
+      <HeaderSubheader>
+        <FormattedMessage
+          as={[Function]}
+          defaultMessage="Debug Level: {level}"
+          id="dapp.status.logs.subtitle"
+          values={
+            Object {
+              "level": "Default",
+            }
+          }
+        />
+        <Button
+          as="button"
+          basic={true}
+          circular={true}
+          className={undefined}
+          compact={true}
+          icon="pause"
+          onClick={[Function]}
+          size="large"
+        />
+        <Button
+          as="button"
+          basic={true}
+          circular={true}
+          className={undefined}
+          compact={true}
+          icon="sort numeric ascending"
+          onClick={[Function]}
+          size="large"
+        />
+      </HeaderSubheader>
+    </div>
+  }
+>
+  <p
+    key="0"
+  >
+    <span>
+      [
+      1-1-1
+      ]
+    </span>
+    <span>
+      FooLog
+    </span>
+  </p>
+  <p
+    key="1"
+  >
+    <span>
+      [
+      2-2-2
+      ]
+    </span>
+    <span>
+      BarLog
+    </span>
+  </p>
+</Section>
+`;
