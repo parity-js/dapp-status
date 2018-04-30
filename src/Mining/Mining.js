@@ -111,8 +111,9 @@ export class Mining extends Component {
                 defaultMessage="Best Block, at {time}"
                 values={{
                   time: new Date(latestBlock.timestamp)
-                    .toTimeString()
-                    .split(' ')[0]
+                    .toString()
+                    .split('GMT')[0] // Remove all parts after "GMT" to omit timezone
+                    .trim()
                 }}
               />
             </Statistic.Label>

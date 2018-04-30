@@ -29,6 +29,7 @@ const decodeExtraData = str => {
   } catch (err) {
     // hex -> str
     return str
+      .toString()
       .match(/.{1,2}/g)
       .map(v => {
         return String.fromCharCode(parseInt(v, 16));
