@@ -1,7 +1,7 @@
 {
   "name": "@parity/dapp-status",
   "description": "Check the status of your Parity node",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": "index.js",
   "author": "Parity Team <admin@parity.io>",
   "maintainers": [],
