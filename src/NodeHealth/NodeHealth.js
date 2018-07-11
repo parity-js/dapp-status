@@ -15,24 +15,24 @@
 // along with Parity.  If not, see <http://www.gnu.org/licenses/>.
 
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { inject, observer } from 'mobx-react';
 
-import { STATUS_OK, STATUS_BAD } from '@parity/mobx/lib/node/NodeHealthStore';
+import { STATUS_BAD } from '@parity/ui/lib/StatusIndicator/store';
 import StatusIndicator from '@parity/ui/lib/StatusIndicator';
 import Statistic from 'semantic-ui-react/dist/commonjs/views/Statistic';
 import { FormattedMessage } from 'react-intl';
 
 import Section from '../components/Section';
-import styles from './NodeHealth.css';
 
 export class NodeHealth extends Component {
-  static propTypes = {
-    nodeHealthStore: PropTypes.object.isRequired
-  };
+  static propTypes = {};
 
   render() {
-    const { nodeHealthStore: { health, overall } } = this.props;
+    const {
+      netPeersStore: { netPeers },
+      statusStore: { overall },
+      syncingStore: { syncing }
+    } = this.props;
 
     return (
       <Section
@@ -46,7 +46,7 @@ export class NodeHealth extends Component {
         <Statistic.Group widths={4}>
           <Statistic>
             <Statistic.Value>
-              {health.sync && health.sync.status === STATUS_OK ? (
+              {syncing === false ? (
                 <FormattedMessage id="dapp.status.sync" defaultMessage="sync" />
               ) : (
                 <FormattedMessage
@@ -56,7 +56,7 @@ export class NodeHealth extends Component {
               )}
             </Statistic.Value>
             <Statistic.Label>
-              {health.sync && health.sync.status === STATUS_OK ? (
+              {syncing === false ? (
                 <FormattedMessage
                   id="dapp.status.chainSynchronized"
                   defaultMessage="Chain Synchronized"
@@ -71,8 +71,8 @@ export class NodeHealth extends Component {
           </Statistic>
           <Statistic>
             <Statistic.Value>
-              {health.peers
-                ? `${health.peers.details[0]}/${health.peers.details[1]}`
+              {netPeers && +netPeers.connected
+                ? `${netPeers.connected.toFormat()}/${netPeers.max.toFormat()}`
                 : '0/25'}
             </Statistic.Value>
             <Statistic.Label>
@@ -84,17 +84,18 @@ export class NodeHealth extends Component {
           </Statistic>
           <Statistic>
             <Statistic.Value>
-              {health.time ? (
+              {/* {health.time ? (
                 <span>
                   {health.time.details}{' '}
                   <span className={styles.timeUnity}>ms</span>
                 </span>
               ) : (
                 '-'
-              )}
+              )} */}
+              OK
             </Statistic.Value>
             <Statistic.Label>
-              {health.time && health.time.status === STATUS_OK ? (
+              {true /* TODO find if time is sync */ ? (
                 <FormattedMessage
                   id="dapp.status.timeSynchronized"
                   defaultMessage="Time Synchronized"
@@ -127,4 +128,6 @@ export class NodeHealth extends Component {
   }
 }
 
-export default inject('nodeHealthStore')(observer(NodeHealth));
+export default inject('netPeersStore', 'statusStore', 'syncingStore')(
+  observer(NodeHealth)
+);

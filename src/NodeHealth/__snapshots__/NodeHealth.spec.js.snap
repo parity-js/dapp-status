@@ -31,7 +31,7 @@ exports[`should render correctly 1`] = `
     </Statistic>
     <Statistic>
       <StatisticValue>
-        2/3
+        0/25
       </StatisticValue>
       <StatisticLabel>
         <FormattedMessage
@@ -43,13 +43,7 @@ exports[`should render correctly 1`] = `
     </Statistic>
     <Statistic>
       <StatisticValue>
-        <span>
-          Foo
-           
-          <span>
-            ms
-          </span>
-        </span>
+        OK
       </StatisticValue>
       <StatisticLabel>
         <FormattedMessage
@@ -120,12 +114,12 @@ exports[`should render correctly not fully loaded 1`] = `
     </Statistic>
     <Statistic>
       <StatisticValue>
-        -
+        OK
       </StatisticValue>
       <StatisticLabel>
         <FormattedMessage
-          defaultMessage="Time Not Synchronized"
-          id="dapp.status.timeNotSynchronized"
+          defaultMessage="Time Synchronized"
+          id="dapp.status.timeSynchronized"
           values={Object {}}
         />
       </StatisticLabel>
@@ -134,7 +128,6 @@ exports[`should render correctly not fully loaded 1`] = `
       <StatisticValue>
         <StatusIndicator
           id="overall"
-          status="bad"
         />
       </StatisticValue>
       <StatisticLabel>

@@ -17,17 +17,21 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
-import { STATUS_OK } from '@parity/mobx/lib/node/NodeHealthStore';
+import { STATUS_OK } from '@parity/ui/lib/StatusIndicator/store';
 
 import { NodeHealth } from './NodeHealth';
 
 const props = {
-  nodeHealthStore: {
-    health: {
-      peers: { status: STATUS_OK, details: [2, 3] },
-      sync: { status: STATUS_OK },
-      time: { status: STATUS_OK, details: 'Foo' }
-    },
+  syncingStore: {
+    syncing: false
+  },
+  netPeersStore: {
+    netPeers: {
+      connected: { toFormat: () => 2 }, // Quickly mock BigNumber.js
+      max: { toFormat: () => 25 }
+    }
+  },
+  statusStore: {
     overall: STATUS_OK
   }
 };
@@ -39,7 +43,9 @@ test('should render correctly', () => {
 });
 
 test('should render correctly not fully loaded', () => {
-  const component = shallow(<NodeHealth nodeHealthStore={{ health: {} }} />);
+  const component = shallow(
+    <NodeHealth statusStore={{}} syncingStore={{}} netPeersStore={{}} />
+  );
 
   expect(shallowToJson(component)).toMatchSnapshot();
 });

@@ -2,7 +2,7 @@
 
 exports[`should render correctly 1`] = `
 <div>
-  <inject-NodeHealth-with-nodeHealthStore />
+  <inject-NodeHealth-with-netPeersStore-statusStore-syncingStore />
   <SegmentGroup
     horizontal={true}
   >
