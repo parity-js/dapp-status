@@ -26,8 +26,6 @@ import api from './api';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-console.log(stores);
-
 const rootStore = {
   accountsStore: stores.eth.accounts().get(api),
   chainStore: stores.parity.netChain().get(api),
