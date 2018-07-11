@@ -164,7 +164,7 @@ test('should not change state value if another prop is modified', () => {
   const component = shallowWithIntl(<Field {...props} />);
   component.setProps({ width: 2 });
 
-  expect(component.state('value')).toBe(null);
+  expect(component.state('value')).toBe('');
 });
 
 test('should handle isLoading and isSaved states after submitting', () => {

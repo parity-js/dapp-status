@@ -36,7 +36,7 @@ exports[`when we have a normal input should render correctly 1`] = `
     onKeyPress={[Function]}
     readOnly={false}
     type="text"
-    value={null}
+    value=""
   />
 </FormField>
 `;
@@ -98,7 +98,7 @@ exports[`when we have a normal input should render correctly with copy button 1`
         onSubmit={[Function]}
         readOnly={false}
         type="text"
-        value={null}
+        value=""
       />
     }
   />
@@ -123,7 +123,7 @@ exports[`when we have an action input should render correctly 1`] = `
     onSubmit={[Function]}
     readOnly={false}
     type="text"
-    value={null}
+    value=""
   />
 </FormField>
 `;
