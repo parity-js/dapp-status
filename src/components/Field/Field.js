@@ -39,7 +39,7 @@ export class Field extends Component {
     isCopied: false,
     isLoading: false,
     isSaved: false,
-    value: null
+    value: ''
   };
 
   componentWillReceiveProps({ value }) {
