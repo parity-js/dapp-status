@@ -24,6 +24,10 @@ import { injectIntl, intlShape } from 'react-intl';
 import styles from './CoinbaseField.css';
 
 export class CoinbaseField extends Component {
+  static contextTypes = {
+    api: PropTypes.object
+  };
+
   static propTypes = {
     accountsStore: PropTypes.object.isRequired,
     coinbaseStore: PropTypes.object.isRequired,
@@ -31,7 +35,7 @@ export class CoinbaseField extends Component {
   };
 
   handleCoinbaseChange = (_, { value }) => {
-    this.props.coinbaseStore.setAuthor(value);
+    this.context.api.parity.setAuthor(value);
   };
 
   render() {
@@ -54,7 +58,7 @@ export class CoinbaseField extends Component {
         }
         label={formatMessage(messages.coinbaseLabel)}
         onChange={this.handleCoinbaseChange}
-        options={accounts.map(account => ({
+        options={(accounts || []).map(account => ({
           image: <IdentityIcon address={account} alt={account} />,
           key: account,
           value: account,

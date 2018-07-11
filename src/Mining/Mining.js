@@ -54,7 +54,7 @@ export class Mining extends Component {
       extraDataStore: { extraData },
       gasFloorTargetStore: { gasFloorTarget },
       hashrateStore: { hashrate },
-      latestBlockStore: { latestBlock },
+      latestBlockStore: { getBlockByNumber },
       minGasPriceStore: { minGasPrice }
     } = this.props;
 
@@ -103,17 +103,19 @@ export class Mining extends Component {
         <LowerCaseStatistic size="tiny" widths={2}>
           <Statistic>
             <Statistic.Value>{`#${toNiceNumber(
-              latestBlock.number || ' -'
+              getBlockByNumber ? getBlockByNumber.number : ' -'
             )}`}</Statistic.Value>
             <Statistic.Label>
               <FormattedMessage
                 id="dapp.status.mining.bestBlockLabel"
                 defaultMessage="Best Block, at {time}"
                 values={{
-                  time: new Date(latestBlock.timestamp)
-                    .toString()
-                    .split('GMT')[0] // Remove all parts after "GMT" to omit timezone
-                    .trim()
+                  time: getBlockByNumber
+                    ? new Date(getBlockByNumber.timestamp)
+                        .toString()
+                        .split('GMT')[0] // Remove all parts after "GMT" to omit timezone
+                        .trim()
+                    : '-'
                 }}
               />
             </Statistic.Label>

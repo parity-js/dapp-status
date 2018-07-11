@@ -22,7 +22,6 @@ exports[`should render correctly 1`] = `
         />
       }
       readOnly={true}
-      value="Foo"
     />
     <FormGroup
       widths={2}
@@ -131,7 +130,6 @@ exports[`should render correctly when not fully loaded 1`] = `
         />
       }
       readOnly={true}
-      value="Foo"
     />
     <FormGroup
       widths={2}

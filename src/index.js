@@ -18,47 +18,34 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider as MobxProvider } from 'mobx-react';
 import ContextProvider from '@parity/ui/lib/ContextProvider';
-import {
-  AccountsStore,
-  ChainStore,
-  CoinbaseStore,
-  DefaultExtraDataStore,
-  DevLogsLevelsStore,
-  DevLogsStore,
-  EnodeStore,
-  ExtraDataStore,
-  GasFloorTargetStore,
-  HashrateStore,
-  LatestBlockStore,
-  MinGasPriceStore,
-  NetPeersStore,
-  NetPortStore,
-  NodeHealthStore,
-  RpcSettingsStore
-} from '@parity/mobx/lib';
+import StatusStore from '@parity/ui/lib/StatusIndicator/store';
+import stores from '@parity/mobx';
 import 'semantic-ui-css/semantic.min.css';
 
 import api from './api';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
+console.log(stores);
+
 const rootStore = {
-  accountsStore: AccountsStore.get(api),
-  chainStore: ChainStore.get(api),
-  coinbaseStore: CoinbaseStore.get(api),
-  defaultExtraDataStore: DefaultExtraDataStore.get(api),
-  devLogsLevelsStore: DevLogsLevelsStore.get(api),
-  devLogsStore: DevLogsStore.get(api),
-  enodeStore: EnodeStore.get(api),
-  extraDataStore: ExtraDataStore.get(api),
-  gasFloorTargetStore: GasFloorTargetStore.get(api),
-  hashrateStore: HashrateStore.get(api),
-  latestBlockStore: LatestBlockStore.get(api),
-  minGasPriceStore: MinGasPriceStore.get(api),
-  netPeersStore: NetPeersStore.get(api),
-  netPortStore: NetPortStore.get(api),
-  nodeHealthStore: NodeHealthStore.get(api),
-  rpcSettingsStore: RpcSettingsStore.get(api)
+  accountsStore: stores.eth.accounts().get(api),
+  chainStore: stores.parity.netChain().get(api),
+  coinbaseStore: stores.eth.coinbase().get(api),
+  defaultExtraDataStore: stores.parity.defaultExtraData().get(api),
+  devLogsLevelsStore: stores.parity.devLogsLevels().get(api),
+  devLogsStore: stores.parity.devLogs().get(api),
+  enodeStore: stores.parity.enode().get(api),
+  extraDataStore: stores.parity.extraData().get(api),
+  gasFloorTargetStore: stores.parity.gasFloorTarget().get(api),
+  hashrateStore: stores.eth.hashrate().get(api),
+  latestBlockStore: stores.eth.getBlockByNumber('latest').get(api),
+  minGasPriceStore: stores.parity.minGasPrice().get(api),
+  netPeersStore: stores.parity.netPeers().get(api),
+  netPortStore: stores.parity.netPort().get(api),
+  rpcSettingsStore: stores.parity.rpcSettings().get(api),
+  statusStore: StatusStore.get(api),
+  syncingStore: stores.eth.syncing().get(api)
 };
 
 ReactDOM.render(

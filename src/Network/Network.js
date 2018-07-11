@@ -37,7 +37,7 @@ export class Network extends Component {
 
   render() {
     const {
-      chainStore: { chain },
+      chainStore: { netChain },
       enodeStore: { enode },
       netPeersStore: { netPeers },
       netPortStore: { netPort },
@@ -63,7 +63,7 @@ export class Network extends Component {
               />
             }
             readOnly
-            value={chain}
+            value={netChain}
           />
           <Form.Group widths={2}>
             <Field

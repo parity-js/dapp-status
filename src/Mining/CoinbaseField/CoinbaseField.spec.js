@@ -40,7 +40,7 @@ test('should render correctly', () => {
   expect(shallowToJson(component)).toMatchSnapshot();
 });
 
-test('should handle setAuthor', () => {
+test.skip('should handle setAuthor', () => {
   const component = shallowWithIntl(<CoinbaseField {...props} />);
   const input = component.find(Form.Select);
   input.props().onChange(null, { value: 'Foo' });
