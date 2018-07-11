@@ -27,6 +27,7 @@ git add .
 echo "Bumping package version"
 
 npm --no-git-tag-version version
+git reset --hard HEAD # TODO Without this, CI fails with yarn.lock modified
 npm version patch -m "[CI Skip] %s"
 git push --quiet origin HEAD:refs/heads/$TRAVIS_BRANCH > /dev/null 2>&1
 
