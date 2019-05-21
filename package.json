@@ -46,7 +46,7 @@
     "semantic-ui-react": "^0.77.0"
   },
   "devDependencies": {
-    "bignumber.js": "^5.0.0",
+    "bignumber.js": "^8.1.1",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.13.1",
     "enzyme-to-json": "^3.3.5"
