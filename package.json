@@ -43,7 +43,7 @@
     "react-scripts": "1.0.17",
     "rlp": "^2.1.0",
     "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.77.0"
+    "semantic-ui-react": "^0.87.2"
   },
   "devDependencies": {
     "bignumber.js": "^5.0.0",
