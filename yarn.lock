@@ -14,6 +14,14 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@parity/abi@^5.1.7":
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-5.1.7.tgz#f793321b9d6b655795dbc5ac0789b9d81c1aa144"
+  dependencies:
+    bignumber.js "^8.0.1"
+    js-sha3 "0.8.0"
+    utf8 "^3.0.0"
+
 "@parity/abi@~2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-2.1.4.tgz#23e2b9e6d37a54035b76d941d6d74b9c5d21fb99"
@@ -22,7 +30,7 @@
     js-sha3 "0.5.5"
     utf8 "^2.1.2"
 
-"@parity/api@2.1.x", "@parity/api@^2.1.23", "@parity/api@^2.1.24":
+"@parity/api@2.1.x", "@parity/api@^2.1.23":
   version "2.1.24"
   resolved "https://registry.yarnpkg.com/@parity/api/-/api-2.1.24.tgz#e04ca177598354b435b83c8cfe7c7c3672bf3e44"
   dependencies:
@@ -40,6 +48,22 @@
     store "^2.0.12"
     websocket "^1.0.25"
 
+"@parity/api@^5.1.7":
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/@parity/api/-/api-5.1.7.tgz#8a6c02d00e1230df0aad62b4931f84ea4b5c390f"
+  dependencies:
+    "@parity/abi" "^5.1.7"
+    bignumber.js "^8.0.1"
+    blockies "0.0.2"
+    es6-error "4.0.2"
+    es6-promise "^4.1.1"
+    eventemitter3 "^3.1.0"
+    isomorphic-fetch "^2.2.1"
+    js-sha3 "0.8.0"
+    lodash "^4.17.11"
+    store "^2.0.12"
+    websocket "^1.0.25"
+
 "@parity/etherscan@2.1.x":
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/@parity/etherscan/-/etherscan-2.1.3.tgz#65dbf4eb0e75a99f0054a8bf227af851ac0a37f4"
@@ -51,11 +75,7 @@
     qs "^6.5.0"
     whatwg-fetch "^2.0.3"
 
-"@parity/jsonrpc@2.1.x":
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/@parity/jsonrpc/-/jsonrpc-2.1.4.tgz#d64f348e6ae0b24eb995f7002a03e2ade59f5da0"
-
-"@parity/jsonrpc@^2.1.5":
+"@parity/jsonrpc@2.1.x", "@parity/jsonrpc@^2.1.5":
   version "2.1.6"
   resolved "https://registry.yarnpkg.com/@parity/jsonrpc/-/jsonrpc-2.1.6.tgz#260bbe7dfcec18d59f0bf1668dfd6021452d6452"
 
@@ -1251,6 +1271,10 @@ bignumber.js@8.0.1:
 bignumber.js@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-5.0.0.tgz#fbce63f09776b3000a83185badcde525daf34833"
+
+bignumber.js@^8.0.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-8.1.1.tgz#4b072ae5aea9c20f6730e4e5d529df1271c4d885"
 
 binary-extensions@^1.0.0:
   version "1.11.0"
@@ -4841,13 +4865,9 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@4.17.11, lodash@^4.17.10, lodash@^4.17.11:
+lodash@4.17.11, "lodash@>=3.5 <5", lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.4:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-
-"lodash@>=3.5 <5", lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.4:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 loglevel@1.4.1:
   version "1.4.1"
@@ -7871,6 +7891,10 @@ useragent.js@^0.5.6:
 utf8@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/utf8/-/utf8-2.1.2.tgz#1fa0d9270e9be850d9b05027f63519bf46457d96"
+
+utf8@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/utf8/-/utf8-3.0.0.tgz#f052eed1364d696e769ef058b183df88c87f69d1"
 
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
