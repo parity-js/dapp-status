@@ -14,6 +14,20 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@babel/runtime@^7.3.1":
+  version "7.5.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.5.tgz#74fba56d35efbeca444091c7850ccd494fd2f132"
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
+"@parity/abi@^4.1.1":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-4.1.1.tgz#2b18e99835cd07b7b47d6a45ac58ce1ff7a5a32c"
+  dependencies:
+    bignumber.js "^8.0.1"
+    js-sha3 "0.8.0"
+    utf8 "^3.0.0"
+
 "@parity/abi@~2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-2.1.4.tgz#23e2b9e6d37a54035b76d941d6d74b9c5d21fb99"
@@ -22,7 +36,7 @@
     js-sha3 "0.5.5"
     utf8 "^2.1.2"
 
-"@parity/api@2.1.x", "@parity/api@^2.1.23", "@parity/api@^2.1.24":
+"@parity/api@2.1.x", "@parity/api@^2.1.24":
   version "2.1.24"
   resolved "https://registry.yarnpkg.com/@parity/api/-/api-2.1.24.tgz#e04ca177598354b435b83c8cfe7c7c3672bf3e44"
   dependencies:
@@ -37,6 +51,22 @@
     isomorphic-fetch "^2.2.1"
     js-sha3 "0.5.5"
     lodash "^4.17.4"
+    store "^2.0.12"
+    websocket "^1.0.25"
+
+"@parity/api@^4.0.2":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@parity/api/-/api-4.1.1.tgz#b14098f4b4dd2527410fb298f4187cc12618cd51"
+  dependencies:
+    "@parity/abi" "^4.1.1"
+    bignumber.js "^8.0.1"
+    blockies "0.0.2"
+    es6-error "4.1.1"
+    es6-promise "^4.1.1"
+    eventemitter3 "^3.1.0"
+    isomorphic-fetch "^2.2.1"
+    js-sha3 "0.8.0"
+    lodash "^4.17.11"
     store "^2.0.12"
     websocket "^1.0.25"
 
@@ -123,53 +153,53 @@
     useragent.js "^0.5.6"
     yargs "6.6.0"
 
-"@parity/ui@^3.1.18":
-  version "3.1.18"
-  resolved "https://registry.yarnpkg.com/@parity/ui/-/ui-3.1.18.tgz#4a67d10c3db3a6faaf93f2e50741962e77a11123"
+"@parity/ui@^3.1.28":
+  version "3.1.28"
+  resolved "https://registry.yarnpkg.com/@parity/ui/-/ui-3.1.28.tgz#64723a99b6739c5623d679398b2fdd581d413cba"
   dependencies:
-    "@parity/api" "^2.1.23"
+    "@parity/api" "^4.0.2"
     "@parity/etherscan" "2.1.x"
     "@parity/mobx" "^1.1.3"
     "@parity/shared" "~3.0.2"
     babel-runtime "^6.26.0"
-    bignumber.js "8.0.1"
+    bignumber.js "8.0.2"
     brace "0.11.1"
     date-difference "1.0.0"
     eventemitter3 "^3.1.0"
-    file-saver "1.3.8"
+    file-saver "2.0.0"
     geopattern "1.2.3"
     js-sha3 "0.8.0"
     keycode "^2.1.9"
-    lodash "4.17.11"
+    lodash "4.17.13"
     moment "^2.21.0"
     qrcode-generator "1.4.1"
-    react-ace "6.2.0"
+    react-ace "6.3.2"
     react-copy-to-clipboard "5.0.1"
-    react-datetime "2.16.2"
-    react-dom "16.6.1"
-    react-dropzone "7.0.1"
+    react-datetime "2.16.3"
+    react-dom "16.7.0"
+    react-dropzone "8.0.3"
     react-element-to-jsx-string "14.0.2"
     react-event-listener "^0.6.4"
-    react-intl "2.7.2"
+    react-intl "2.8.0"
     react-markdown "^4.0.3"
-    react-portal "4.1.5"
-    react-qr-reader "2.1.1"
-    react-redux "^5.0.6"
+    react-portal "4.2.0"
+    react-qr-reader "2.1.2"
+    react-redux "^6.0.0"
     react-router "^4.3.1"
-    react-tooltip "3.9.0"
-    recharts "1.3.6"
+    react-tooltip "3.9.2"
+    recharts "1.4.2"
     redux "4.0.1"
     semantic-ui-css "2.4.1"
-    semantic-ui-react "0.83.0"
+    semantic-ui-react "0.84.0"
     zxcvbn "4.4.2"
 
 "@parity/wordlist@1.1.x":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@parity/wordlist/-/wordlist-1.1.0.tgz#9e9ed3ab7837f5633b5844e60a355e9e63e427ae"
 
-"@semantic-ui-react/event-stack@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@semantic-ui-react/event-stack/-/event-stack-3.0.0.tgz#fde997c4613328b4f85cacfe8feaf1f4dcf53f6f"
+"@semantic-ui-react/event-stack@^3.0.1":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@semantic-ui-react/event-stack/-/event-stack-3.1.0.tgz#aadbe4a28b0dd7703c5f451640d0fefe66dd9208"
   dependencies:
     exenv "^1.2.2"
     prop-types "^15.6.2"
@@ -1244,13 +1274,17 @@ bignumber.js@4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-4.1.0.tgz#db6f14067c140bd46624815a7916c92d9b6c24b1"
 
-bignumber.js@8.0.1:
-  version "8.0.1"
-  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-8.0.1.tgz#5d419191370fb558c64e3e5f70d68e5947138832"
+bignumber.js@8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-8.0.2.tgz#d8c4e1874359573b1ef03011a2d861214aeef137"
 
 bignumber.js@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-5.0.0.tgz#fbce63f09776b3000a83185badcde525daf34833"
+
+bignumber.js@^8.0.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/bignumber.js/-/bignumber.js-8.1.1.tgz#4b072ae5aea9c20f6730e4e5d529df1271c4d885"
 
 binary-extensions@^1.0.0:
   version "1.11.0"
@@ -2636,6 +2670,10 @@ es6-error@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/es6-error/-/es6-error-4.0.2.tgz#eec5c726eacef51b7f6b73c20db6e1b13b069c98"
 
+es6-error@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/es6-error/-/es6-error-4.1.1.tgz#9e3af407459deed47e9a91f9b885a84eb05c561d"
+
 es6-iterator@^2.0.1, es6-iterator@~2.0.1:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/es6-iterator/-/es6-iterator-2.0.3.tgz#a7de889141a05a94b0854403b2d0a0fbfa98f3b7"
@@ -3129,9 +3167,9 @@ file-loader@1.1.5:
     loader-utils "^1.0.2"
     schema-utils "^0.3.0"
 
-file-saver@1.3.8:
-  version "1.3.8"
-  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-1.3.8.tgz#e68a30c7cb044e2fb362b428469feb291c2e09d8"
+file-saver@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/file-saver/-/file-saver-2.0.0.tgz#74eef7748159503b60008a15af2f1930fb5df7ab"
 
 filename-regex@^2.0.0:
   version "2.0.1"
@@ -3628,13 +3666,19 @@ hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
-hoist-non-react-statics@^2.2.1, hoist-non-react-statics@^2.3.1:
+hoist-non-react-statics@^2.3.1:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
 
 hoist-non-react-statics@^2.5.0, hoist-non-react-statics@^2.5.5:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+
+hoist-non-react-statics@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
+  dependencies:
+    react-is "^16.7.0"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -3716,7 +3760,7 @@ html-webpack-plugin@2.29.0:
     pretty-error "^2.0.2"
     toposort "^1.0.0"
 
-htmlparser2@^3.8.3, htmlparser2@^3.9.0:
+htmlparser2@^3.8.3:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/htmlparser2/-/htmlparser2-3.10.0.tgz#5f5e422dcf6119c0d983ed36260ce9ded0bee464"
   dependencies:
@@ -3909,7 +3953,7 @@ intl-messageformat@^2.0.0, intl-messageformat@^2.1.0:
   dependencies:
     intl-messageformat-parser "1.4.0"
 
-intl-relativeformat@^2.0.0, intl-relativeformat@^2.1.0:
+intl-relativeformat@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/intl-relativeformat/-/intl-relativeformat-2.1.0.tgz#010f1105802251f40ac47d0e3e1a201348a255df"
   dependencies:
@@ -4772,7 +4816,7 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
-lodash-es@^4.2.0, lodash-es@^4.2.1:
+lodash-es@^4.2.1:
   version "4.17.14"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.14.tgz#12a95a963cc5955683cee3b74e85458954f37ecc"
 
@@ -4841,11 +4885,11 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-lodash@4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
+lodash@4.17.13:
+  version "4.17.13"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.13.tgz#0bdc3a6adc873d2f4e0c4bac285df91b64fc7b93"
 
-"lodash@>=3.5 <5", lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.4:
+"lodash@>=3.5 <5", lodash@^4.13.1, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@~4.17.4:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
@@ -6166,9 +6210,9 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-ace@6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/react-ace/-/react-ace-6.2.0.tgz#9ab0fd88cd1ef6712fec4b243b61431964481c11"
+react-ace@6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/react-ace/-/react-ace-6.3.2.tgz#4fc75edce17d79c3169791dc184744950aca4794"
   dependencies:
     brace "^0.11.1"
     diff-match-patch "^1.0.4"
@@ -6183,9 +6227,9 @@ react-copy-to-clipboard@5.0.1:
     copy-to-clipboard "^3"
     prop-types "^15.5.8"
 
-react-datetime@2.16.2:
-  version "2.16.2"
-  resolved "https://registry.yarnpkg.com/react-datetime/-/react-datetime-2.16.2.tgz#d5d41fe3f6f3fa8fa1b068f2fae75cec25e1bb39"
+react-datetime@2.16.3:
+  version "2.16.3"
+  resolved "https://registry.yarnpkg.com/react-datetime/-/react-datetime-2.16.3.tgz#7f9ac7d4014a939c11c761d0c22d1fb506cb505e"
   dependencies:
     create-react-class "^15.5.2"
     object-assign "^3.0.0"
@@ -6215,14 +6259,14 @@ react-dev-utils@^4.2.1:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@16.6.1:
-  version "16.6.1"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.6.1.tgz#5476e08694ae504ae385a28b62ecc4fe3a29add9"
+react-dom@16.7.0:
+  version "16.7.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.7.0.tgz#a17b2a7ca89ee7390bc1ed5eb81783c7461748b8"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.2"
-    scheduler "^0.11.0"
+    scheduler "^0.12.0"
 
 react-dom@^16.8.6:
   version "16.8.6"
@@ -6233,9 +6277,9 @@ react-dom@^16.8.6:
     prop-types "^15.6.2"
     scheduler "^0.13.6"
 
-react-dropzone@7.0.1:
-  version "7.0.1"
-  resolved "https://registry.yarnpkg.com/react-dropzone/-/react-dropzone-7.0.1.tgz#bc76bc1686fb47ed0c8301f968fffa6aecdff47b"
+react-dropzone@8.0.3:
+  version "8.0.3"
+  resolved "https://registry.yarnpkg.com/react-dropzone/-/react-dropzone-8.0.3.tgz#1fe14a5ce58c390327273c6e766fb0429d51300e"
   dependencies:
     attr-accept "^1.1.3"
     prop-types "^15.6.2"
@@ -6259,9 +6303,9 @@ react-event-listener@^0.6.4:
     prop-types "^15.6.0"
     warning "^4.0.1"
 
-react-intl@2.7.2:
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.7.2.tgz#efe97e3fc0e99b4e88a6e6150854d3d1852a4381"
+react-intl@2.8.0, react-intl@^2.4.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.8.0.tgz#20b0c1f01d1292427768aa8ec9e51ab7e36503ba"
   dependencies:
     hoist-non-react-statics "^2.5.5"
     intl-format-cache "^2.0.5"
@@ -6269,16 +6313,7 @@ react-intl@2.7.2:
     intl-relativeformat "^2.1.0"
     invariant "^2.1.1"
 
-react-intl@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.4.0.tgz#66c14dc9df9a73b2fbbfbd6021726e80a613eb15"
-  dependencies:
-    intl-format-cache "^2.0.5"
-    intl-messageformat "^2.1.0"
-    intl-relativeformat "^2.0.0"
-    invariant "^2.1.1"
-
-react-is@^16.8.1, react-is@^16.8.6:
+react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.2, react-is@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
 
@@ -6302,15 +6337,15 @@ react-onclickoutside@^6.5.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/react-onclickoutside/-/react-onclickoutside-6.7.0.tgz#997a4d533114c9a0a104913638aa26afc084f75c"
 
-react-portal@4.1.5:
-  version "4.1.5"
-  resolved "https://registry.yarnpkg.com/react-portal/-/react-portal-4.1.5.tgz#6665d4d2a92d47d6f8b07a6529e26fc52d5cccde"
+react-portal@4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-portal/-/react-portal-4.2.0.tgz#5400831cdb0ae64dccb8128121cf076089ab1afd"
   dependencies:
     prop-types "^15.5.8"
 
-react-qr-reader@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/react-qr-reader/-/react-qr-reader-2.1.1.tgz#25fdb9812d61f727ef20614342eb54394f8e0ab6"
+react-qr-reader@2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-qr-reader/-/react-qr-reader-2.1.2.tgz#ff3d7d377d3ffbd9d78a0947ca04221c2f180e15"
   dependencies:
     jsqr "^1.1.1"
     prop-types "^15.5.8"
@@ -6325,16 +6360,16 @@ react-redux@4.4.6:
     lodash "^4.2.0"
     loose-envify "^1.1.0"
 
-react-redux@^5.0.6:
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.6.tgz#23ed3a4f986359d68b5212eaaa681e60d6574946"
+react-redux@^6.0.0:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-6.0.1.tgz#0d423e2c1cb10ada87293d47e7de7c329623ba4d"
   dependencies:
-    hoist-non-react-statics "^2.2.1"
-    invariant "^2.0.0"
-    lodash "^4.2.0"
-    lodash-es "^4.2.0"
-    loose-envify "^1.1.0"
-    prop-types "^15.5.10"
+    "@babel/runtime" "^7.3.1"
+    hoist-non-react-statics "^3.3.0"
+    invariant "^2.2.4"
+    loose-envify "^1.4.0"
+    prop-types "^15.7.2"
+    react-is "^16.8.2"
 
 react-resize-detector@~2.3.0:
   version "2.3.0"
@@ -6417,13 +6452,12 @@ react-test-renderer@^16.0.0-0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-tooltip@3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-3.9.0.tgz#d874df922c3b34b2e547ec62ff8b2eef42017b51"
+react-tooltip@3.9.2:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-3.9.2.tgz#df74e6f5fd454bb15132d5d2d506895cf505cb5e"
   dependencies:
     classnames "^2.2.5"
     prop-types "^15.6.0"
-    sanitize-html-react "^1.13.0"
 
 react-transition-group@^2.5.0:
   version "2.5.0"
@@ -6524,9 +6558,9 @@ recharts-scale@^0.4.2:
   dependencies:
     decimal.js-light "^2.4.1"
 
-recharts@1.3.6:
-  version "1.3.6"
-  resolved "https://registry.yarnpkg.com/recharts/-/recharts-1.3.6.tgz#01562de309fdd78eccc867fb67a7e1b6415c3bcb"
+recharts@1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/recharts/-/recharts-1.4.2.tgz#76975bc77e964ff68dd8bd68151d9f735852dc01"
   dependencies:
     classnames "~2.2.5"
     core-js "~2.5.1"
@@ -6615,6 +6649,10 @@ regenerator-runtime@^0.12.0:
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
 
+regenerator-runtime@^0.13.2:
+  version "0.13.3"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
+
 regenerator-transform@^0.10.0:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.10.1.tgz#1e4996837231da8b7f3cf4114d71b5691a0680dd"
@@ -6628,10 +6666,6 @@ regex-cache@^0.4.2:
   resolved "https://registry.yarnpkg.com/regex-cache/-/regex-cache-0.4.4.tgz#75bdc58a2a1496cec48a12835bc54c8d562336dd"
   dependencies:
     is-equal-shallow "^0.1.3"
-
-regexp-quote@0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/regexp-quote/-/regexp-quote-0.0.0.tgz#1e0f4650c862dcbfed54fd42b148e9bb1721fcf2"
 
 regexpu-core@^1.0.0:
   version "1.0.0"
@@ -6939,21 +6973,13 @@ sane@~1.6.0:
     walker "~1.0.5"
     watch "~0.10.0"
 
-sanitize-html-react@^1.13.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/sanitize-html-react/-/sanitize-html-react-1.13.0.tgz#e757b9adbaf2c8a762f3d2dff70138838e05420a"
-  dependencies:
-    htmlparser2 "^3.9.0"
-    regexp-quote "0.0.0"
-    xtend "^4.0.0"
-
 sax@^1.2.1, sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
-scheduler@^0.11.0:
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.11.0.tgz#def1f1bfa6550cc57981a87106e65e8aea41a6b5"
+scheduler@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.12.0.tgz#8ab17699939c0aedc5a196a657743c496538647b"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -7008,15 +7034,15 @@ semantic-ui-css@2.4.1, semantic-ui-css@^2.4.1:
   dependencies:
     jquery x.*
 
-semantic-ui-react@0.83.0:
-  version "0.83.0"
-  resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.83.0.tgz#3437d77bfd3d1e44d61e78d5740c262b9e63f258"
+semantic-ui-react@0.84.0:
+  version "0.84.0"
+  resolved "https://registry.yarnpkg.com/semantic-ui-react/-/semantic-ui-react-0.84.0.tgz#43f908fd547b1e8b2b108675a93cd7d7460bcdbe"
   dependencies:
     "@babel/runtime" "^7.1.2"
-    "@semantic-ui-react/event-stack" "^3.0.0"
+    "@semantic-ui-react/event-stack" "^3.0.1"
     classnames "^2.2.6"
     keyboard-key "^1.0.2"
-    lodash "^4.17.10"
+    lodash "^4.17.11"
     prop-types "^15.6.2"
     shallowequal "^1.1.0"
 
@@ -7871,6 +7897,10 @@ useragent.js@^0.5.6:
 utf8@^2.1.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/utf8/-/utf8-2.1.2.tgz#1fa0d9270e9be850d9b05027f63519bf46457d96"
+
+utf8@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/utf8/-/utf8-3.0.0.tgz#f052eed1364d696e769ef058b183df88c87f69d1"
 
 util-deprecate@^1.0.1, util-deprecate@~1.0.1:
   version "1.0.2"
