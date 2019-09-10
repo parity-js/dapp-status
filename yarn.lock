@@ -14,6 +14,22 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
+"@formatjs/intl-relativetimeformat@^3.0.2":
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-relativetimeformat/-/intl-relativetimeformat-3.0.2.tgz#09943f6e008aba611f973edab284e1051d977951"
+  dependencies:
+    "@formatjs/intl-utils" "^1.0.1"
+
+"@formatjs/intl-unified-numberformat@^0.4.9":
+  version "0.4.9"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-unified-numberformat/-/intl-unified-numberformat-0.4.9.tgz#343ce36d8c95bd5529ce80120a4abbf933cae69e"
+  dependencies:
+    "@formatjs/intl-utils" "^1.0.1"
+
+"@formatjs/intl-utils@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@formatjs/intl-utils/-/intl-utils-1.0.1.tgz#cc24ffbf36c05793ab9cd1eceee12ca95b1d7e08"
+
 "@parity/abi@~2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-2.1.4.tgz#23e2b9e6d37a54035b76d941d6d74b9c5d21fb99"
@@ -174,9 +190,31 @@
     exenv "^1.2.2"
     prop-types "^15.6.2"
 
+"@types/hoist-non-react-statics@^3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
+"@types/invariant@^2.2.30":
+  version "2.2.30"
+  resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.30.tgz#20efa342807606ada5483731a8137cb1561e5fe9"
+
 "@types/node@*":
   version "8.5.2"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.5.2.tgz#83b8103fa9a2c2e83d78f701a9aa7c9539739aa5"
+
+"@types/prop-types@*":
+  version "15.7.2"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.2.tgz#0e58ae66773d7fd7c372a493aff740878ec9ceaa"
+
+"@types/react@*":
+  version "16.9.2"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.2.tgz#6d1765431a1ad1877979013906731aae373de268"
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
 
 abab@^1.0.3:
   version "1.0.4"
@@ -2086,6 +2124,10 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   dependencies:
     cssom "0.3.x"
 
+csstype@^2.2.0:
+  version "2.6.6"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.6.tgz#c34f8226a94bbb10c32cc0d714afdf942291fc41"
+
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -3628,13 +3670,15 @@ hoist-non-react-statics@^1.0.3, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
-hoist-non-react-statics@^2.2.1, hoist-non-react-statics@^2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.3.1.tgz#343db84c6018c650778898240135a1420ee22ce0"
-
-hoist-non-react-statics@^2.5.0, hoist-non-react-statics@^2.5.5:
+hoist-non-react-statics@^2.2.1, hoist-non-react-statics@^2.3.1, hoist-non-react-statics@^2.5.0, hoist-non-react-statics@^2.5.5:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
+
+hoist-non-react-statics@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.0.tgz#b09178f0122184fb95acf525daaecb4d8f45958b"
+  dependencies:
+    react-is "^16.7.0"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -3899,9 +3943,21 @@ intl-format-cache@^2.0.5:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-2.1.0.tgz#04a369fecbfad6da6005bae1f14333332dcf9316"
 
+intl-format-cache@^4.1.19:
+  version "4.1.19"
+  resolved "https://registry.yarnpkg.com/intl-format-cache/-/intl-format-cache-4.1.19.tgz#43da8f621693dbd770683caacdae049ff3e6f31a"
+
+intl-locales-supported@^1.4.5:
+  version "1.4.7"
+  resolved "https://registry.yarnpkg.com/intl-locales-supported/-/intl-locales-supported-1.4.7.tgz#24acc88e1337429dbf1926463e6234c1325bbe6d"
+
 intl-messageformat-parser@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-1.4.0.tgz#b43d45a97468cadbe44331d74bb1e8dea44fc075"
+
+intl-messageformat-parser@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/intl-messageformat-parser/-/intl-messageformat-parser-3.1.0.tgz#747e3dbafaf1c1fd07dffa6e4f54ed60e0336ca7"
 
 intl-messageformat@^2.0.0, intl-messageformat@^2.1.0:
   version "2.2.0"
@@ -3909,19 +3965,20 @@ intl-messageformat@^2.0.0, intl-messageformat@^2.1.0:
   dependencies:
     intl-messageformat-parser "1.4.0"
 
-intl-relativeformat@^2.0.0, intl-relativeformat@^2.1.0:
+intl-messageformat@^7.2.0:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/intl-messageformat/-/intl-messageformat-7.2.1.tgz#f65a327a62dd3f5e2477afe03dd61586c4242906"
+  dependencies:
+    intl-format-cache "^4.1.19"
+    intl-messageformat-parser "^3.1.0"
+
+intl-relativeformat@^2.1.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/intl-relativeformat/-/intl-relativeformat-2.1.0.tgz#010f1105802251f40ac47d0e3e1a201348a255df"
   dependencies:
     intl-messageformat "^2.0.0"
 
-invariant@^2.0.0, invariant@^2.1.1, invariant@^2.2.1, invariant@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
-  dependencies:
-    loose-envify "^1.0.0"
-
-invariant@^2.2.4:
+invariant@^2.0.0, invariant@^2.1.1, invariant@^2.2.1, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   dependencies:
@@ -6269,14 +6326,25 @@ react-intl@2.7.2:
     intl-relativeformat "^2.1.0"
     invariant "^2.1.1"
 
-react-intl@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-2.4.0.tgz#66c14dc9df9a73b2fbbfbd6021726e80a613eb15"
+react-intl@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/react-intl/-/react-intl-3.2.1.tgz#3563d10b4116d61eb3234137f23d71a99d8d68af"
   dependencies:
-    intl-format-cache "^2.0.5"
-    intl-messageformat "^2.1.0"
-    intl-relativeformat "^2.0.0"
+    "@formatjs/intl-relativetimeformat" "^3.0.2"
+    "@formatjs/intl-unified-numberformat" "^0.4.9"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    "@types/invariant" "^2.2.30"
+    hoist-non-react-statics "^3.3.0"
+    intl-format-cache "^4.1.19"
+    intl-locales-supported "^1.4.5"
+    intl-messageformat "^7.2.0"
+    intl-messageformat-parser "^3.1.0"
     invariant "^2.1.1"
+    shallow-equal "^1.1.0"
+
+react-is@^16.7.0:
+  version "16.9.0"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.9.0.tgz#21ca9561399aad0ff1a7701c01683e8ca981edcb"
 
 react-is@^16.8.1, react-is@^16.8.6:
   version "16.8.6"
@@ -7108,6 +7176,10 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   dependencies:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
+
+shallow-equal@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/shallow-equal/-/shallow-equal-1.2.0.tgz#fd828d2029ff4e19569db7e19e535e94e2d1f5cc"
 
 shallowequal@^1.1.0:
   version "1.1.0"
