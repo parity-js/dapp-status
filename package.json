@@ -41,7 +41,7 @@
     "react-dom": "^16.11.0",
     "react-intl": "^2.4.0",
     "react-scripts": "1.0.17",
-    "rlp": "^2.1.0",
+    "rlp": "^2.2.3",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^0.77.0"
   },
